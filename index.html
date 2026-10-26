@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore Minecraft Education student projects from Advan School.">
+  <title>Minecraft Education | Project Catalog</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Advan School home">
+      <span class="brand-mark">A</span>
+      <span><strong>ADVAN SCHOOL</strong><small>MINECRAFT EDUCATION</small></span>
+    </a>
+    <div class="topbar-right">
+      <span class="live-dot"></span>
+      <span>PROJECT GALLERY / 作品ギャラリー</span>
+    </div>
+  </header>
+
+  <main class="app">
+    <section class="intro" id="intro">
+      <p class="eyebrow">EXPLORE · BUILD · CODE · CREATE</p>
+      <h1>Minecraft Education<br><span>Project Catalog</span></h1>
+      <p class="intro-ja">マインクラフト教育 プロジェクトカタログ</p>
+      <p class="intro-copy">Discover what you can imagine, build, and program.<br>想像して、つくって、プログラミングしよう。</p>
+      <button class="start-button" id="startButton">Explore projects <span aria-hidden="true">→</span></button>
+    </section>
+
+    <section class="gallery hidden" id="gallery" aria-label="Project slideshow">
+      <div class="gallery-heading">
+        <div>
+          <p class="eyebrow" id="projectCategory">PROJECT 01 / BUILDING</p>
+          <h2 id="projectTitle">My First Minecraft House</h2>
+          <p class="project-title-ja" id="projectTitleJa">はじめてのマインクラフトハウス</p>
+        </div>
+        <div class="counter" aria-live="polite"><span id="currentNumber">01</span><span class="counter-divider">/</span><span id="totalNumber">05</span></div>
+      </div>
+
+      <div class="project-image-wrap">
+        <img id="projectImage" src="images/project-01-house.svg" alt="Minecraft-style house project screenshot">
+        <span class="image-label">STUDENT PROJECT</span>
+      </div>
+
+      <div class="project-details">
+        <div class="description">
+          <p id="projectDescription">Build a home, explore materials, and develop creative thinking.</p>
+          <p id="projectDescriptionJa" lang="ja">家を建てながら、素材について学び、創造力を育てます。</p>
+        </div>
+        <div class="skills" id="projectSkills" aria-label="Skills"></div>
+      </div>
+
+      <div class="controls">
+        <button class="nav-button" id="prevButton" aria-label="Previous project" disabled><span aria-hidden="true">←</span><span class="button-label">Previous</span></button>
+        <div class="progress-area">
+          <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+          <div class="dots" id="dots" aria-label="Choose a project"></div>
+        </div>
+        <button class="nav-button next" id="nextButton" aria-label="Next project"><span class="button-label">Next</span><span aria-hidden="true">→</span></button>
+      </div>
+      <p class="keyboard-hint"><kbd>←</kbd> <kbd>→</kbd> Use your keyboard to browse / キーボードの左右キーで移動</p>
+      <button class="back-link" id="backButton">← Back to introduction / はじめに戻る</button>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>ADVAN SCHOOL</span>
+    <span>大切な人に、心から勧められるスクールを。</span>
+    <span class="footer-note">A sample catalog · サンプルカタログ</span>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
